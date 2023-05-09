@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store</title>
+  <!-- Style links -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/accent.css">
+  <link rel="stylesheet" href="css/store.css">
+  <!-- Google Fonts: Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Start Header -->
+  <header>
+    <div class="container">
+      <!-- Lorem Logo for now -->
+      <a href="index.html" class="logo"><img src="images/logoipsum-250.svg" alt="Logo"></a>
+      <!-- Links -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="store.html">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- search & cart -->
+      <div>
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+  
+  <!-- Start Store Body -->
+  <div class="storebdy">
+    <div class="container store-container">
+      <!-- Start Filter -->
+      <ul class="switcher">
+        <li class="active" data-cat=".all">All</li>
+        <li data-cat=".lvl1">Level.1</li>
+        <li data-cat=".lvl2">Level.2</li>
+        <li data-cat=".lvl3">Level.3</li>
+        <li data-cat=".lvl4">Level.4</li>
+        <li data-cat=".lvl5">Level.5</li>
+        <li data-cat=".lvl6">Level.6</li>
+      </ul>
+      <!-- End Filter -->
+      <!-- Start Books Shelf -->
+      <div class="storeBooks">
+        <!-- <div class="book">
+          <div class="outside">
+            <img width="230" src="images/img-1.jpg" alt="">
+            <span class="lvl">Level 3</span>
+            <div class="info">
+              <h3>Secret Garden <br><span>and Other Stories</span></h3>
+              <h4><span>RETOLD BY</span><br> FRANCES KAYLON</h4>
+              <div class="price-qty">
+                <div class="price">$30</div>
+                <div class="qtyBtns">
+                  <i class="fa-solid fa-minus"></i>
+                  <div class="qty">0</div>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="tocart">ADD TO CART</div>
+            </div>
+          </div>
+          <div class="inside">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="images/img-1.jpg" alt="">
+            <div class="popDesc">
+              <h3>Book Name</h3>
+              <div class="price">30$</div>
+              <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores commodi aspernatur aliquam eius velit, consectetur quas earum minus amet. Vitae officiis ipsum natus quis unde alias culpa? Nam, aliquid debitis.</p>
+              <div class="qty-addbtn">
+                <div class="qtyBtns">
+                  <i class="fa-solid fa-minus"></i>
+                  <div class="qty">0</div>
+                  <i class="fa-solid fa-plus"></i>
+                  <div class="tocart">ADD TO CART</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <!-- End Books Shelf -->
+    </div>
+  </div>
+  <!-- End Store Body --> 
+</body>
+  <!-- JavaScript -->
+  <script src="javascript/data.js"></script>
+  <script src="javascript/main.js"></script>
+</html>

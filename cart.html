@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart</title>
+  <!-- Style Links -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/accent.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <!-- Google Fonts: Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Start Header -->
+  <header>
+    <div class="container">
+      <!-- Lorem Logo for now -->
+      <a href="index.html" class="logo"><img src="images/logoipsum-250.svg" alt="Logo"></a>
+      <!-- Links -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="store.html">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- search & cart -->
+      <div>
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Start Cart -->
+  <div class="cart">
+    <div class="container cartjs">
+      <!-- <p>Your cart is currently empty.</p>
+      <a href="#">Return to shop</a> -->
+      <table id="mainTable">
+        <thead>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>Product</td>
+            <td>Price</td>
+            <td>Period</td>
+            <td>Subtotal</td>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+
+      <div class="total">
+        <p>Cart Totals</p>
+        <table>
+          <tbody>
+          </tbody>
+        </table>
+        <button>Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+  <!-- End Cart -->
+  <!-- Start Footer -->
+  <footer>
+    <div class="container">
+      <img src="images/logoipsum-250.svg" alt="Logo">
+      <p>WE ARE IPSUM</p>
+      <p>&copy;2023 <span>IPSUM</span>  All Right Reserved</p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  <!-- Js link -->
+  <script src="javascript/data.js"></script>
+  <script src="javascript/cart.js"></script>
+</body>
+</html>

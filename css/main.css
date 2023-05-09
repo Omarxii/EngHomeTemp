@@ -1,0 +1,272 @@
+/* Start Header */
+header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+header .container .logo img{
+  width: 150px;
+  height: 30px;
+}
+header .container ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+header .container ul a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 25px;
+  display: block; /*bcz padding from up*/
+  font-size: 14px;
+  transition: var(--transition-time);
+}
+header .container ul a:hover,
+header .container ul a.active {
+  color: var(--color-primary);
+}
+
+/* header .container div {
+
+} */
+header .container div i {
+  color: white;
+  transition: var(--transition-time);
+  margin-left: 20px;
+}
+header .container div i:hover {
+  color: var(--color-primary);
+}
+/* End Header */
+/* Start Landing */
+.landing {
+  background-color: var(--color-shad3);
+  min-height: 100vh;
+  position: relative;
+}
+.landing .layout {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/wrinkled-white-paper.jpg);
+  background-size: cover;
+  opacity: .22;
+  z-index: -1;
+  mix-blend-mode: multiply;
+}
+.landing .text {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+  transform: translateX(-25%);
+  color: white;
+  width: 500px;
+}
+.landing .text p {
+  line-height: 1.6;
+}
+.landing img {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  height: 500px;
+}
+/* End Landing */
+/* Start features */
+.benefits.container {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.benefits.container h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+.benefits.container .features {
+  display: flex;
+}
+.benefits.container .features .feat {
+  text-align: center;
+  padding: 15px;
+}
+.benefits.container .features .feat:not(:last-child) {
+  margin-right: 20px;
+}
+.benefits.container .features .feat i {
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.benefits.container .features .feat h3 {
+  font-weight: 800;
+  font-size: 20px;
+  margin: 20px auto;
+}
+.benefits.container .features .feat p {
+  color: var(--color-seconderytxt);
+  line-height: 1.8;
+}
+/* End features */
+/* Start Discover */
+.discover .container {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.discover .container .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.discover .container .head h2 {
+  font-size: 40px;
+  width: 350px;
+}
+.discover .container .head p a {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: var(--transition-time);
+}
+.discover .container .head p:hover a {
+  color: var(--color-shad2);
+}
+
+.discover .container .books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 50px;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+.discover .container .books .book {
+  text-align: center;
+}
+.discover .container .books .book img {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+.discover .container .books .book img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+.discover .container .books .book .info {
+  padding: 20px 40px;
+  margin-top: 10px;
+  margin-left: 10%;
+  text-align: left;
+}
+.discover .container .books .book .info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.discover .container .books .book .info span {
+  color: var(--color-seconderytxt);
+  margin-bottom: 10px;
+  display: block;
+}
+.discover .container .books .book .info .tocart {
+  border: 1px solid var(--color-primary);
+  border-bottom-width: 4px;
+  color: var(--color-primary);
+  font-weight: 600;
+  width: fit-content;
+  padding: 10px 20px;
+  transition: var(--transition-time);
+}
+.discover .container .books .book .info .tocart:hover {
+  color: white;
+  background-color: var(--color-primary);
+}
+.discover .container .more {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-bottom-width: 4px;
+  transition: var(--transition-time);
+  width: fit-content;
+  padding: 10px 20px;
+  display: block;
+  margin: 40px auto 20px;
+}
+.discover .container .more:hover {
+  color: white;
+  background-color: var(--color-primary);
+}
+/* End Discover */
+/* Start Quote */
+.quote .container {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+  height: 600px;
+}
+.quote .container img {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+}
+.quote .container q {
+  display: block;
+  background-color: var(--color-primary);
+  color: white;
+  width: 420px;
+  padding: 30px;
+  padding-left: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.4;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* End Quote */
+/* Start Footer */
+footer {
+  background-color: var(--color-shad3);
+}
+footer .container {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+  color: white;
+}
+footer .container img {
+  margin-bottom: 20px;
+}
+footer .container p:first-of-type {
+  font-size: 28px;
+  font-weight: 300;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+footer .container p:last-of-type {
+  margin-top: 60px;
+  letter-spacing: 3px;
+}
+footer .container p:last-of-type span {
+  color: var(--color-primary);
+}
+/* End Footer */

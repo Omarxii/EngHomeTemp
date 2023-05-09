@@ -1,0 +1,282 @@
+/* Start Header */
+header {
+  /* position: absolute; */
+  /* width: 100%;
+  left: 0; */
+  z-index: 2;
+  background-color: var(--color-shad3);
+
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .logo img{
+  width: 150px;
+  height: 30px;
+}
+header .container ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+header .container ul a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 25px;
+  display: block; /*bcz padding from up*/
+  font-size: 14px;
+  transition: var(--transition-time);
+}
+header .container ul a:hover,
+header .container ul a.active {
+  color: var(--color-primary);
+}
+
+header .container div i {
+  color: white;
+  transition: var(--transition-time);
+  margin-left: 20px;
+}
+header .container div i:hover {
+  color: var(--color-primary);
+}
+/* End Header */
+/* Start CART */
+/* Start Cart When Empty */
+.cart .container {
+  padding-top: calc(var(--section-padding) + 100px);
+  padding-bottom: calc(var(--section-padding) + 100px);
+}
+.cart .container p:not(.total p) {
+  padding: 25px 25px 25px 55px;
+  background-color: var(--color-lightGrey);
+  font-size: 20px;
+  font-weight: 300;
+  border-top: 3px solid var(--color-primary);
+  position: relative;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+.cart .container p::before:not(.total p) {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-primary);
+  border-top-width: 5px;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cart .container a {
+  text-decoration: none;
+  color: var(--color-black);
+  padding: 15px 20px;
+  background-color: var(--color-midGrey);
+  display: block;
+  margin: 30px 0;
+  width: fit-content;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* Start Cart When NOT Empty */
+.cartjs .books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 50px;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+.cartjs .books .book {
+  text-align: center;
+}
+.cartjs .books .book img {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+.cartjs .books .book img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+.cartjs .books .book .info {
+  padding: 20px 40px;
+  margin-top: 10px;
+  margin-left: 10%;
+  text-align: left;
+}
+.cartjs .books .book .info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.cartjs .books .book .info span {
+  color: var(--color-seconderytxt);
+  margin-bottom: 10px;
+  display: block;
+}
+.cartjs .books .book .info .tocart {
+  border: 1px solid var(--color-primary);
+  border-bottom-width: 4px;
+  color: var(--color-primary);
+  font-weight: 600;
+  width: fit-content;
+  padding: 10px 20px;
+  transition: var(--transition-time);
+}
+.cartjs .books .book .info .tocart:hover {
+  color: white;
+  background-color: var(--color-primary);
+}
+.cartjs .more {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-bottom-width: 4px;
+  transition: var(--transition-time);
+  width: fit-content;
+  padding: 10px 20px;
+  display: block;
+  margin: 40px auto 20px;
+}
+.cartjs .more:hover {
+  color: white;
+  background-color: var(--color-primary);
+}
+/* End CART */
+/* Start Filter Switch */
+.switcher {
+  display: flex;
+  justify-content: center;
+}
+.switcher li {
+  background-color: var(--color-lightGrey);
+  padding: 10px 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.switcher li:not(:last-child) {
+  border-right: 2px solid var(--color-midGrey);
+}
+.switcher li.active {
+  background-color: var(--color-primary);
+  color: white;
+}
+/* End Filter Switch */
+
+/* Start Footer */
+footer {
+  background-color: var(--color-shad3);
+}
+footer .container {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+  color: white;
+}
+footer .container img {
+  margin-bottom: 20px;
+}
+footer .container p:first-of-type {
+  font-size: 28px;
+  font-weight: 300;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+footer .container p:last-of-type {
+  margin-top: 60px;
+  letter-spacing: 3px;
+}
+footer .container p:last-of-type span {
+  color: var(--color-primary);
+}
+/* End Footer */
+
+/* Start cart when not Empty */
+.cartjs table:not(.total table) {
+  width: 100%;
+  border-spacing: 0px;
+  margin-bottom: 40px;
+  display: none;
+}
+.cartjs table:not(.total table) td {
+  padding: 9px 12px;
+}
+.cartjs table:not(.total table) thead td {
+  font-weight: bold;
+  background-color: var(--color-primary);
+  color: white;
+  border-color: white;
+  height: 50px;
+}
+.cartjs table:not(.total table), td:not(.total table td) {
+  border: 1px solid rgba(0,0,0,.2);
+  text-align: center;
+}
+.cartjs table:not(.total table) td img {
+  width: 50px;
+}
+.cartjs table:not(.total table) tbody .fa-xmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  transition: var(--transition-time);
+}
+.cartjs table:not(.total table) tbody .fa-xmark:hover {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+}
+
+.total {
+  width: 50%;
+  margin-left: auto;
+  display: none;
+}
+.total p {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.total table {
+  width: 100%;
+  text-align: left;
+  border-spacing: 0px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 5px;
+  font-size: 18px;
+}
+.total table tr td, .total th {
+  padding: 9px 12px;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+.total button {
+  border: 1px solid var(--color-primary);
+  border-bottom-width: 4px;
+  color: var(--color-primary);
+  background-color: white;
+  font-weight: 600;
+  width: fit-content;
+  height: 70px;
+  padding: 10px 20px;
+  transition: var(--transition-time);
+  width: 100%;
+  margin-top: 20px;
+  font-size: 22px;
+}
+.total button:hover {
+  color: white;
+  background-color: var(--color-primary);
+}
